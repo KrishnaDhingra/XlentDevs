@@ -4,7 +4,7 @@ import { PrimaryButton1, PrimaryButton2, SecondaryButton1, SecondaryButton2 } fr
 
 function App() {
   return (
-    <div>
+    <div className="bg-gray-50 h-screen w-screen">
       <Heading1Primary/>
       <Heading2Primary/>
       {/* <Heading2Secondary/> */}

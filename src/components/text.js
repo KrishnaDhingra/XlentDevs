@@ -1,6 +1,6 @@
 export const Heading1Primary = () => {
     return (
-        <p className="text-secondary-400 text-[32px] font-bold">Heading1Primary</p>
+        <p className="text-secondary-400 text-[28px] font-bold">Heading1Primary</p>
     )
 }
 
