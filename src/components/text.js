@@ -1,47 +1,52 @@
-export const Heading1Primary = () => {
+export const Heading1Primary = ({text}) => {
     return (
-        <p className="text-secondary-400 text-[28px] font-bold">Heading1Primary</p>
+        <span className="text-secondary-400 text-[28px] font-bold">{text}</span>
+    )
+}
+export const Heading1Secondary = ({text}) => {
+    return (
+        <span className="text-secondary-300 text-[28px] font-bold">{text}</span>
     )
 }
 
-export const Heading2Primary = () => {
+export const Heading2Primary = ({text}) => {
     return (
-        <p className="text-secondary-400 text-[22px] font-bold">Heading2Primary</p>
+        <span className="text-secondary-400 text-[22px] font-bold">{text}</span>
     )
 }
 
-export const Heading2Secondary = () => {
+export const Heading2Secondary = ({text}) => {
     return (
-        <p className="text-secondary-300 text-[22px] font-semibold">Heading2Secondary</p>
+        <span className="text-secondary-300 text-[22px] font-semibold">{text}</span>
     )
 }
-export const TitlePrimary = () => {
+export const TitlePrimary = ({text}) => {
     return  (
-        <p className="text-secondary-400 text-[18px] font-semibold">TitlePrimary</p> 
+        <span className="text-secondary-400 text-[18px] font-semibold">{text}</span> 
     )
 }
-export const TitleSecondary = () => {
+export const TitleSecondary = ({text}) => {
     return  (
-        <p className="text-secondary-300 text-[18px] font-bold">TitleSecondary</p> 
+        <span className="text-secondary-300 text-[18px] font-bold">{text}</span> 
     )
 }
-export const SubTitlePrimary = () => {
+export const SubTitlePrimary = ({text}) => {
     return  (
-        <p className="text-secondary-400 text-[16px] font-semibold">SubTitlePrimary</p> 
+        <span className="text-secondary-400 text-[16px] font-semibold">{text}</span> 
     )
 }
-export const SubTitleSecondary = () => {
+export const SubTitleSecondary = ({text}) => {
     return  (
-        <p className="text-secondary-300 text-[16px] font-semibold">SubTitleSecondary</p> 
+        <span className="text-secondary-300 text-[16px] font-semibold">{text}</span> 
     )
 }
-export const DescriptionPrimary = () => {
+export const DescriptionPrimary = ({text}) => {
     return  (
-        <p className="text-secondary-400 text-[14px] font-medium">DescriptionPrimary</p> 
+        <span className="text-secondary-400 text-[14px] font-medium">{text}</span> 
     )
 }
-export const DescriptionSecondary = () => {
+export const DescriptionSecondary = ({text}) => {
     return  (
-        <p className="text-secondary-300 text-[14px] font-normal">DescriptionSecondary</p> 
+        <span className="text-secondary-300 text-[14px] font-normal">{text}</span> 
     )
 }
