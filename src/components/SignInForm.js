@@ -9,7 +9,7 @@ const SignUpForm = () => {
     const { handleSubmit, errors } = useSignInForm(SignInValidate, email, password)
 
     return (
-    <div className="grow flex flex-col gap-4">
+    <div className="grow flex flex-col gap-8">
         <div className="max-w-[400px] w-full"><Heading2Secondary text={'Log in and resume learning your prefered courses'}/></div>
 
         <form onSubmit={handleSubmit} className="max-w-[450px] flex flex-col gap-[12px]">
@@ -25,7 +25,7 @@ const SignUpForm = () => {
             <button type="submit" className="bg-primary-400 hover:bg-primary-500 rounded-md text-white py-[10px] font-medium">Log In</button>
             <button type="submit" className="bg-primary-600 hover:bg-primary-700 rounded-md text-white py-[10px] font-medium">Continue with google</button>
 
-            <span className="mt-3 w-full text-center"><DescriptionPrimary text={"Don't have an account?"}/><a href="/login" className="ml-1 underline text-primary-600 text-[14px] hover:text-primary-700">Sign up</a></span>
+            <span className="mt-5 w-full text-center"><DescriptionPrimary text={"Don't have an account?"}/><a href="/login" className="ml-1 underline text-primary-600 text-[14px] hover:text-primary-700">Sign up</a></span>
         </form>
 
 
