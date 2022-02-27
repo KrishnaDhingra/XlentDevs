@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../components/logo'
-import SignUpAnimation from '../components//SignUpAnimation'
+import SignUpAnimation from '../components/SignUpAnimation'
 import SignUpForm from '../components/SignUpForm'
 import { Heading1Primary, Heading1Secondary } from '../components/text'
 
