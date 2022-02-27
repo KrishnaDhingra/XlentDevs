@@ -1,15 +1,18 @@
 import './App.css';
-import { Heading1Primary, Heading2Primary, Heading2Secondary, TitlePrimary, TitleSecondary, SubTitlePrimary, SubTitleSecondary, DescriptionPrimary, DescriptionSecondary } from './components/text'
-import { PrimaryButton1, PrimaryButton2, SecondaryButton1, SecondaryButton2 } from './components/buttons.js'
 import SignUp from './pages/signUp';
 import SignIn from './pages/signIn';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="bg-gray-50 h-screen w-screen">
-      {/* <SignUp/> */}
-      <SignIn/>
-    </div>
+    <Router>
+      <div className="h-screen w-screen">
+        <Switch>
+          <Route path='/signup' exact component={SignUp}/>
+          <Route path='/login' exact component={SignIn}/>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

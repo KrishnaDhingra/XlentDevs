@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import SignUpValidate from './SignUpValidate'
 import useSignUpForm from './useSignUpForm'
+import { Link } from 'react-router-dom'
 import { Heading2Secondary, DescriptionPrimary } from './text'
 const SignUpForm = () => {
 
@@ -30,7 +31,7 @@ const SignUpForm = () => {
             <button type="submit" className="bg-primary-400 hover:bg-primary-500 rounded-md text-white py-[10px] font-medium">Sign up</button>
             <button type="submit" className="bg-primary-600 hover:bg-primary-700 rounded-md text-white py-[10px] font-medium">Continue with google</button>
 
-            <span className="mt-3 w-full text-center"><DescriptionPrimary text={'Already have account?'}/><a href="/login" className="ml-1 underline text-primary-600 text-[14px] hover:text-primary-700">Log in</a></span>
+            <span className="mt-3 w-full text-center"><DescriptionPrimary text={'Already have account?'}/><Link to="/login"><a className="ml-1 underline text-primary-600 text-[14px] hover:text-primary-700">Log in</a></Link></span>
         </form>
 
 
