@@ -3,7 +3,7 @@ import LogoImage from '../utilities/logo.png'
 
 const Logo = () => {
     return (
-        <img className="h-[100px] w-[100px]" src={LogoImage} alt="Logo" />
+        <img className="h-full w-full" src={LogoImage} alt="Logo" />
     )
 }
 export default Logo
