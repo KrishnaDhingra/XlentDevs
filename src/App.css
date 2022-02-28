@@ -24,6 +24,16 @@ img{
 .navbar-links:hover > * {
     color: #00A3FF;
 }
+/* .popular-arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid green;
+} */
 @media screen and (max-width:640px){
     .nav-links{
         position: absolute;
@@ -38,7 +48,4 @@ img{
         width: 100%;
         gap: 2rem; 
     }
-    /* .nav-links div > * {
-        font-size: 0.8rem;
-    } */
 }

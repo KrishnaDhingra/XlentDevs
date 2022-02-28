@@ -1,13 +1,13 @@
 import React from 'react'
 import CourseImage from '../utilities/course-image.png'
 import { DescriptionSecondary } from './text'
-import { SecondaryButton1 } from './buttons'
 const Course = () => {
     return (
         <section>
             <div className="w-[410px] rounded-2xl">
                 <div className="relative w-full">
                     <img clasName="z-0" src={CourseImage} alt="" />
+                    <PopularFlag/>
                     <span className="z-1 absolute left-3 bottom-3 text-white text-[18px] font-semibold">Andriod Development</span>
                 </div>
                 <div className="flex flex-col gap-3 bg-primary-100 rounded-b-2xl w-full h-auto px-4 py-3">
@@ -19,10 +19,19 @@ const Course = () => {
                         <span className="text-primary-600 text-[14px] font-bold">PREQUISITES:</span>
                         <DescriptionSecondary text={"Basic knowledge of Andriod"}/> 
                     </div>
-                    <button className="rounded bg-secondary-400 hover:bg-secondary-300 text-white mx-auto px-7 py-[10px] text-sm font-medium mb-7">Get Started</button>
+                    <button className="mt-4 rounded bg-secondary-400 hover:bg-secondary-300 text-white mx-auto px-7 py-[10px] text-sm font-medium mb-7">Get Started</button>
                 </div>
             </div>
         </section>
+    )
+}
+
+const PopularFlag = () => {
+    return (
+        <div className="flag-container absolute py-[2px] text-center px-3 right-0 top-4 w-[140px] bg-[#AD00FF]">
+            <span className="popular-text m-0 p-0 text-white text-[14px] font-semibold">POPULAR</span> 
+            <div className="popular-arrow-right"></div>
+        </div>
     )
 }
 export default Course
