@@ -20,3 +20,6 @@ img{
     display: block;
     max-width: 100%;
 }
+.navbar-links:hover > * {
+    color: #00A3FF;
+}
