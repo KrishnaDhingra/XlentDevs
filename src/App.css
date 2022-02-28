@@ -23,3 +23,21 @@ img{
 .navbar-links:hover > * {
     color: #00A3FF;
 }
+@media screen and (max-width:640px){
+    .nav-links{
+        position: absolute;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        left: 0;
+        top: 9.6vh;
+        height: 90.4vh;
+        flex-direction: column;
+        background-color: #ACE1FF;
+        max-width: 400px;
+        width: 100%;
+        gap: 2rem; 
+    }
+    /* .nav-links div > * {
+        font-size: 0.8rem;
+    } */
+}
