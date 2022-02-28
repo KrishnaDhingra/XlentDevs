@@ -5,7 +5,7 @@ import { SecondaryButton1 } from './buttons'
 const Course = () => {
     return (
         <section>
-            <div className="w-[410px] m-8 bg-blue-700 rounded-2xl">
+            <div className="w-[410px] rounded-2xl">
                 <div className="relative w-full">
                     <img clasName="z-0" src={CourseImage} alt="" />
                     <span className="z-1 absolute left-3 bottom-3 text-white text-[18px] font-semibold">Andriod Development</span>
