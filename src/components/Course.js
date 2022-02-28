@@ -4,9 +4,9 @@ import { DescriptionSecondary } from './text'
 const Course = () => {
     return (
         <section>
-            <div className="w-[410px] rounded-2xl">
+            <div className="w-full rounded-2xl">
                 <div className="relative w-full">
-                    <img clasName="z-0" src={CourseImage} alt="" />
+                    <img className="w-full" src={CourseImage} alt="" />
                     <PopularFlag/>
                     <span className="z-1 absolute left-3 bottom-3 text-white text-[18px] font-semibold">Andriod Development</span>
                 </div>
@@ -28,7 +28,7 @@ const Course = () => {
 
 const PopularFlag = () => {
     return (
-        <div className="flag-container absolute py-[2px] text-center px-3 right-0 top-4 w-[140px] bg-[#AD00FF]">
+        <div className="flag-container absolute py-[2px] text-center px-3 right-0 top-5 w-[140px] bg-[#AD00FF]">
             <span className="popular-text m-0 p-0 text-white text-[14px] font-semibold">POPULAR</span> 
             <div className="popular-arrow-right"></div>
         </div>

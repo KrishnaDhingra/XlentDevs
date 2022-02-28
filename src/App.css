@@ -34,6 +34,11 @@ img{
     border-bottom: 14px solid transparent;
     border-left: 20px solid green;
 } */
+.courses-thumbnail-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
 @media screen and (max-width:640px){
     .nav-links{
         position: absolute;
@@ -47,5 +52,10 @@ img{
         max-width: 400px;
         width: 100%;
         gap: 2rem; 
+    }
+}
+@media screen and (max-width:780px){
+    .courses-thumbnail-container{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
