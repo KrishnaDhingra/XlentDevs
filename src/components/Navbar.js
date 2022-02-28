@@ -7,7 +7,7 @@ import Logo from './logo'
 
 const Navbar = () => {
     return (
-        <nav className="bg-gray-50 flex justify-center px-6">
+        <nav className="flex justify-center px-2 sm:px-4 md:px-6">
             <main className="py-3 flex max-w-[1350px] w-screen justify-between items-center">
                 <section className="h-[70px] w-[70px]"><Logo/></section>
                 <ul className="nav-links flex gap-8">

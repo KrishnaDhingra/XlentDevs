@@ -42,6 +42,7 @@ img{
 @media screen and (max-width:640px){
     .nav-links{
         position: absolute;
+        display: none;
         padding-left: 2rem;
         padding-top: 3rem;
         left: 0;

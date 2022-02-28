@@ -8,7 +8,7 @@ const SignUp = () => {
 
     return (
         <main className="w-screen h-screen flex flex-col gap-5 items-center justify-center">
-            <div className="h-[100px] w-[100px] mb-5"><Logo/></div>
+            <div className="h-[100px] w-[100px] mb-3"><Logo/></div>
             <section className="flex gap-2">
                 <Heading1Primary text={'Hello there 👋'}/>
                 <Heading1Secondary text={'We are glad to have you'}/>
