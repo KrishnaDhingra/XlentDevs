@@ -3,6 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { BsFillPlayBtnFill } from "react-icons/bs";
 import { RiMessage2Fill } from "react-icons/ri";
 import { GoOrganization } from "react-icons/go";
+import { Link } from 'react-router-dom'
 import Logo from './logo'
 
 const Navbar = () => {
@@ -13,19 +14,19 @@ const Navbar = () => {
                 <ul className="nav-links flex gap-8">
                     <div className="flex gap-1 items-center navbar-links">
                         <AiFillHome className="text-secondary-300 text-[13px] font-medium"/>
-                        <li className="text-secondary-300 text-[13px] font-medium">HOME</li>
+                        <Link className="text-secondary-300 text-[13px] font-medium">HOME</Link>
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <BsFillPlayBtnFill className="text-secondary-300 text-[13px] font-medium"/>     
-                        <li className="text-secondary-300 text-[13px] font-medium">COURSES</li>
+                        <Link to="/" className="text-secondary-300 text-[13px] font-medium">COURSES</Link>
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <GoOrganization className="text-secondary-300 text-[13px] font-medium"/>
-                        <li className="text-secondary-300 text-[13px] font-medium">PROJECTS</li>
+                        <Link className="text-secondary-300 text-[13px] font-medium">PROJECTS</Link>
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <RiMessage2Fill className="text-secondary-300 text-[13px] font-medium"/>
-                        <li className="text-secondary-300 text-[13px] font-medium">FEEDBACK</li>
+                        <Link className="text-secondary-300 text-[13px] font-medium">FEEDBACK</Link>
                     </div>
                 </ul>
                 <div className="w-[35px] flex sm:hidden flex-col gap-[4px]">
