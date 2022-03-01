@@ -10,10 +10,10 @@ const SignUpForm = () => {
     const { handleSubmit, errors } = useSignInForm(SignInValidate, email, password)
 
     return (
-    <div className="grow flex flex-col gap-8">
+    <div className="w-full grow flex flex-col gap-8">
         <div className="max-w-[400px] w-full"><Heading2Secondary text={'Log in and resume learning your prefered courses'}/></div>
 
-        <form onSubmit={handleSubmit} className="max-w-[450px] flex flex-col gap-[12px]">
+        <form onSubmit={handleSubmit} className="max-w-[550px] md:max-w-[450px] w-full flex flex-col gap-[12px]">
             <div>
                 {errors.email && <p className="mb-1 text-red-500 text-xs">{errors.email}</p>}
                 <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email" className="w-full text-sm rounded-md px-3 py-[12px] placeholder:text-gray-400 placeholder:text-[13px] outline-none"/>

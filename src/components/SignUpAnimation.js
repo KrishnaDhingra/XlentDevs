@@ -14,7 +14,7 @@ const SignUpAnimation = () => {
     };
 
     return (
-        <div className="grow"><Lottie options={defaultOptions}/></div>
+        <div className="grow w-full"><Lottie options={defaultOptions}/></div>
     )
 }
 export default SignUpAnimation
