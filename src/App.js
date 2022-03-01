@@ -4,6 +4,7 @@ import SignIn from './pages/signIn';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
 import Courses from './pages/courses';
+import Feedback from './pages/feedback';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Navbar/>
         <Switch>
           <Route path='/' exact component={Courses}/>
+          <Route path='/feedback' exact component={Feedback}/>
           <Route path='/signup' exact component={SignUp}/>
           <Route path='/login' exact component={SignIn}/>
         </Switch>

@@ -26,7 +26,7 @@ const Navbar = () => {
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <RiMessage2Fill className="text-secondary-300 text-[13px] font-medium"/>
-                        <Link className="text-secondary-300 text-[13px] font-medium">FEEDBACK</Link>
+                        <Link to="/feedback" className="text-secondary-300 text-[13px] font-medium">FEEDBACK</Link>
                     </div>
                 </ul>
                 <div className="w-[35px] flex sm:hidden flex-col gap-[4px]">

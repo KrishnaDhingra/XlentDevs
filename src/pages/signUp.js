@@ -7,7 +7,7 @@ import { Heading1Primary, Heading1Secondary } from '../components/text'
 const SignUp = () => {
 
     return (
-        <main className="w-screen h-screen flex flex-col gap-5 items-center justify-center">
+        <main className="w-screen h-auto mt-16 flex flex-col gap-5 items-center justify-center">
             <div className="h-[100px] w-[100px] mb-3"><Logo/></div>
             <section className="flex gap-2">
                 <Heading1Primary text={'Hello there 👋'}/>
