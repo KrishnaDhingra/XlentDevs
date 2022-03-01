@@ -28,7 +28,7 @@ const SignUpForm = () => {
             </div>
             <div>
                 {errors.feedback && <p className="mb-1 text-red-500 text-xs">{errors.feedback}</p>}
-                <textarea onChange={(e) => setPassword(e.target.value)} type="text" placeholder="Write your feedback" className="w-full min-h-[45px] max-h-[10rem] text-sm rounded-md px-3 py-[12px] placeholder:text-gray-400 placeholder:text-[13px] outline-none"/>
+                <textarea rows='4' onChange={(e) => setPassword(e.target.value)} type="text" placeholder="Write your feedback" className="w-full min-h-[45px] max-h-[10rem] text-sm rounded-md px-3 py-[12px] placeholder:text-gray-400 placeholder:text-[13px] outline-none"/>
             </div>
 
             <button type="submit" className="bg-primary-400 hover:bg-primary-500 w-[10rem] rounded-md text-white py-[10px] font-medium">Submit</button>
