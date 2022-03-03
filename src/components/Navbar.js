@@ -18,11 +18,11 @@ const Navbar = () => {
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <BsFillPlayBtnFill className="text-secondary-300 text-[13px] font-medium"/>     
-                        <Link to="/" className="text-secondary-300 text-[13px] font-medium">COURSES</Link>
+                        <Link to="/courses" className="text-secondary-300 text-[13px] font-medium">COURSES</Link>
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <GoOrganization className="text-secondary-300 text-[13px] font-medium"/>
-                        <Link to="/" className="text-secondary-300 text-[13px] font-medium">PROJECTS</Link>
+                        <Link to="/projects" className="text-secondary-300 text-[13px] font-medium">PROJECTS</Link>
                     </div>
                     <div className="flex gap-1 items-center navbar-links">
                         <RiMessage2Fill className="text-secondary-300 text-[13px] font-medium"/>
