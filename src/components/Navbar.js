@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className="flex justify-center px-2 sm:px-4 md:px-6">
             <main className="py-3 flex max-w-[1350px] w-screen justify-between items-center">
-                <section className="h-[70px] w-[70px]"><Logo/></section>
+                <Link to="/" className="h-[70px] w-[70px]"><Logo/></Link>
                 <ul className="nav-links flex gap-8">
                     <div className="flex gap-1 items-center navbar-links">
                         <AiFillHome className="text-secondary-300 text-[13px] font-medium"/>

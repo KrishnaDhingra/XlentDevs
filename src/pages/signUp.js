@@ -8,7 +8,6 @@ const SignUp = () => {
 
     return (
         <main className="w-screen h-auto mt-16 flex flex-col gap-5 items-center justify-center px-2 sm:px-4 md:px-6">
-            <div className="h-[100px] w-[100px] mb-3"><Logo/></div>
             <section className="w-full items-center sm:justify-center flex flex-col sm:flex-row gap-0 sm:gap-2">
                 <Heading1Primary text={'Hello there 👋'}/>
                 <Heading1Secondary text={'We are glad to have you'}/>
