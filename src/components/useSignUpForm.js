@@ -8,11 +8,13 @@ import {
   setDoc,
   serverTimestamp
 } from 'firebase/firestore'
+import { useHistory } from "react-router-dom";
 
 const useSignUpForm = (validate, name, email, password) => {
 
     const [errors, setErrors] = useState({})
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const history = useHistory()
     const handleSubmit = (e) => {
         e.preventDefault()
         let values = {
@@ -29,6 +31,7 @@ const useSignUpForm = (validate, name, email, password) => {
             createUserWithEmailAndPassword(authentication, email, password)
             .then(credential => {
                 console.log(credential.user)
+                history.push('/')
             })
             .catch(error => {
               console.log(error.message)
