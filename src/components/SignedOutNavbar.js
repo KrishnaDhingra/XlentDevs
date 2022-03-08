@@ -4,11 +4,9 @@ import { BsFillPlayBtnFill } from "react-icons/bs";
 import { RiMessage2Fill } from "react-icons/ri";
 import { GoOrganization } from "react-icons/go";
 import { Link } from 'react-router-dom'
-import { authentication } from '../firebase';
-import { signOut } from 'firebase/auth';
 import Logo from './logo'
 
-const Navbar = () => {
+const SignedOutNavbar = () => {
     return (
         <nav className="flex justify-center px-2 sm:px-4 md:px-6">
             <main className="py-3 flex max-w-[1350px] w-screen justify-between items-center">
@@ -36,16 +34,13 @@ const Navbar = () => {
                     <div className="w-full border-t-[4px] border-primary-600 rounded-full"></div>
                     <div className="w-full border-t-[4px] border-primary-600 rounded-full"></div>
                 </div>
-                <input type="text" className="max-w-[170px] lg:max-w-[250px] hidden md:inline w-full rounded-md py-[10px] px-5 bg-primary-100 text-sm text-secondary-300 font-medium outline-none placeholder:text-secondary-300 placeholder:text-sm placeholder:font-medium" placeholder="SEARCH" />
-                <span onClick={() => {
-                    signOut(authentication).then(() => {
-                        console.log("User signed out")
-                      }).catch((error) => {
-                        console.log(error.message)
-                    });
-                }}>Signout</span>
+                <div className="flex gap-3">
+                    <Link to="/signup"><button className="rounded bg-primary-300 hover:bg-primary-200 text-white px-9  py-[12px] text-base font-semibold">Sign up</button></Link>
+
+                    <Link to="/login"><button className="rounded border-2 border-primary-400 bg-transparent text-primary-400 hover:bg-primary-400 hover:text-white px-9 py-[10px] text-base font-semibold">Log in</button></Link>
+                </div>
             </main>
         </nav>
     )
 }
-export default Navbar
+export default SignedOutNavbar
