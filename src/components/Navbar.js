@@ -37,13 +37,13 @@ const Navbar = () => {
                     <div className="w-full border-t-[4px] border-primary-600 rounded-full"></div>
                 </div>
                 <input type="text" className="max-w-[170px] lg:max-w-[250px] hidden md:inline w-full rounded-md py-[10px] px-5 bg-primary-100 text-sm text-secondary-300 font-medium outline-none placeholder:text-secondary-300 placeholder:text-sm placeholder:font-medium" placeholder="SEARCH" />
-                <span onClick={() => {
+                {/* <span onClick={() => {
                     signOut(authentication).then(() => {
                         console.log("User signed out")
                       }).catch((error) => {
                         console.log(error.message)
                     });
-                }}>Signout</span>
+                }}>Signout</span> */}
             </main>
         </nav>
     )

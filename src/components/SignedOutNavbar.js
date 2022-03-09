@@ -34,7 +34,7 @@ const SignedOutNavbar = () => {
                     <div className="w-full border-t-[4px] border-primary-600 rounded-full"></div>
                     <div className="w-full border-t-[4px] border-primary-600 rounded-full"></div>
                 </div>
-                <div className="flex gap-3">
+                <div className="signed-out-navbar-button-container flex gap-3">
                     <Link to="/signup"><button className="rounded bg-primary-300 hover:bg-primary-200 text-white px-9  py-[12px] text-base font-semibold">Sign up</button></Link>
 
                     <Link to="/login"><button className="rounded border-2 border-primary-400 bg-transparent text-primary-400 hover:bg-primary-400 hover:text-white px-9 py-[10px] text-base font-semibold">Log in</button></Link>
