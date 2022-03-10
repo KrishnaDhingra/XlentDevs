@@ -61,20 +61,33 @@ img{
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
+.hamburger-close > div:nth-child(1){
+    transform: rotate(45deg);
+}
+.hamburger-close > div:nth-child(2){
+    transform: rotate(-45deg);
+}
+@media screen and (min-width:640px){
+    .nav-links{
+        display: none;
+    }
+}
 @media screen and (max-width:640px){
     .nav-links{
-        position: absolute;
-        display: none;
+        position: fixed;
         padding-left: 2rem;
         padding-top: 3rem;
-        left: 0;
-        top: 9.6vh;
-        height: 90.4vh;
+        left: -100vw;
+        top: 0;
+        height: 100vh;
         flex-direction: column;
         background-color: #ACE1FF;
-        max-width: 400px;
-        width: 100%;
+        width: 100vw;
         gap: 2rem; 
+        z-index: 1000;
+    }
+    .big-screen-nav-links{
+        display: none;
     }
 }
 @media screen and (max-width:780px){
